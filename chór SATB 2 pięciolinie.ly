@@ -5,7 +5,7 @@
 \score {
   \new ChoirStaff <<
     % \new ChordNames { \germanChords \akordy }
-    \new Staff = sopran {
+    \new Staff = panie {
       \clef treble
       \set Staff.instrumentName = \markup \center-column { S A }
       \set Staff.shortInstrumentName = \markup \center-column { S A }
@@ -27,9 +27,10 @@
         \melodiaAltu
       }
     }
-    \addlyrics \tekstAltu
 
-    \new Staff = tenor {
+    \new Lyrics \lyricsto sopran \tekst
+
+    \new Staff = panowie {
       \clef bass
       \set Staff.instrumentName = \markup \center-column { T B }
       \set Staff.shortInstrumentName = \markup \center-column { T B }

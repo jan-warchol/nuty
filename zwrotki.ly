@@ -1,7 +1,7 @@
 \version "2.17.3"
 
 poziomyOdstepI = \markup \hspace #1
-pionowyOdstepI = \markup \vspace #0.75
+pionowyOdstepI = \markup \vspace #1
 
 \markup {
   \vspace #2 % żeby nie zlewało się z nutami

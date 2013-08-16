@@ -16,7 +16,7 @@
         \melodiaSopranu
       }
     }
-    \addlyrics \tekstSopranu
+    \new Lyrics \lyricsto sopran \tekstSopranu
 
     \new Staff = alt {
       \clef treble
@@ -29,7 +29,7 @@
         \melodiaAltu
       }
     }
-    \addlyrics \tekstAltu
+    \new Lyrics \lyricsto alt \tekstAltu
 
     \new Staff = tenor {
       \clef "treble_8"
@@ -42,9 +42,9 @@
         \melodiaTenorow
       }
     }
-    \addlyrics \tekstTenorow
+    \new Lyrics \lyricsto tenor \tekstTenorow
 
-    \new Staff = bass {
+    \new Staff = bas {
       \clef bass
       \set Staff.instrumentName = "B "
       \set Staff.shortInstrumentName = "B "
@@ -55,7 +55,7 @@
         \melodiaBasow
       }
     }
-    \addlyrics \tekstBasow
+    \new Lyrics \lyricsto bas \tekstBasow
   >>
 
   \layout {
