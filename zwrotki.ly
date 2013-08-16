@@ -1,10 +1,10 @@
 \version "2.17.3"
 
-\markup \vspace #1
-
+poziomyOdstepI = \markup \hspace #1
 pionowyOdstepI = \markup \vspace #0.75
 
 \markup {
+  \vspace #2 % żeby nie zlewało się z nutami
   \fill-line {
     \large {
       \hspace #1
@@ -13,14 +13,14 @@ pionowyOdstepI = \markup \vspace #0.75
         \line {
           \bold
           "2."
-          \hspace #1
+          \poziomyOdstepI
           \zwrotkaII
         }
         \pionowyOdstepI
         \line {
           \bold
           "3."
-          \hspace #1
+          \poziomyOdstepI
           \zwrotkaIII
         }
         \pionowyOdstepI
@@ -32,14 +32,14 @@ pionowyOdstepI = \markup \vspace #0.75
         \line {
           \bold
           "4."
-          \hspace #1
+          \poziomyOdstepI
           \zwrotkaIV
         }
         \pionowyOdstepI
         \line {
           \bold
           "5."
-          \hspace #1
+          \poziomyOdstepI
           \zwrotkaV
         }
         \pionowyOdstepI
