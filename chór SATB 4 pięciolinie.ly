@@ -66,9 +66,11 @@
     }
     \context {
       \Lyrics
-      \override LyricSpace #'minimum-distance = #2
+      \override LyricSpace #'minimum-distance = #0.7
       \override VerticalAxisGroup
-      #'nonstaff-unrelatedstaff-spacing #'padding = #0.75
+      #'nonstaff-relatedstaff-spacing #'basic-distance = #5
+      %\override VerticalAxisGroup
+      %#'nonstaff-unrelatedstaff-spacing #'padding = #0.9
     }
   }
 }
