@@ -60,6 +60,7 @@
 
   \layout {
     \compressFullBarRests
+    \override NoteHead #'style = #'altdefault
     \context {
       \Staff
       \consists "Ambitus_engraver"
