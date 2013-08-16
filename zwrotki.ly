@@ -6,7 +6,7 @@ pionowyOdstepI = \markup \vspace #1
 \markup {
   \vspace #2 % żeby nie zlewało się z nutami
   \fill-line {
-    \large {
+    \large {  % FIXME: this doesn't scale line spacing!
       \hspace #1
 
       \column {
