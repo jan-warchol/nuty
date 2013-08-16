@@ -40,6 +40,15 @@ tekstAltu = \tekst
 tekstTenorow = \tekst
 tekstBasow = \tekst
 
+zwrotkaII = \markup {
+}
+zwrotkaIII = \markup {
+}
+zwrotkaIV = \markup {
+}
+zwrotkaV = \markup {
+}
+
 %--------------------------------CAŁOŚĆ
 
 \score {
@@ -119,33 +128,41 @@ tekstBasow = \tekst
   \fill-line {
     \large {
       \hspace #0.1
+
       \column {
         \line {
-          "2. "
-          \column {
-          }
+          \bold
+          "2."
+          \hspace #1
+          \zwrotkaII
         }
         \vspace #0.75
         \line {
-          "3. "
-          \column {
-          }
+          \bold
+          "3."
+          \hspace #1
+          \zwrotkaIII
         }
       }
+
       \hspace #0.1
+
       \column {
         \line {
-          "5. "
-          \column {
-          }
+          \bold
+          "4."
+          \hspace #1
+          \zwrotkaIV
         }
         \vspace #0.75
         \line {
-          "5. "
-          \column {
-          }
+          \bold
+          "5."
+          \hspace #1
+          \zwrotkaV
         }
       }
+
       \hspace #0.1
     }
   }
