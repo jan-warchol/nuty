@@ -124,10 +124,12 @@ zwrotkaV = \markup {
 
 \markup \vspace #1
 
+pionowyOdstepI = \markup \vspace #0.75
+
 \markup {
   \fill-line {
     \large {
-      \hspace #0.1
+      \hspace #1
 
       \column {
         \line {
@@ -136,16 +138,17 @@ zwrotkaV = \markup {
           \hspace #1
           \zwrotkaII
         }
-        \vspace #0.75
+        \pionowyOdstepI
         \line {
           \bold
           "3."
           \hspace #1
           \zwrotkaIII
         }
+        \pionowyOdstepI
       }
 
-      \hspace #0.1
+      \hspace #3
 
       \column {
         \line {
@@ -154,16 +157,17 @@ zwrotkaV = \markup {
           \hspace #1
           \zwrotkaIV
         }
-        \vspace #0.75
+        \pionowyOdstepI
         \line {
           \bold
           "5."
           \hspace #1
           \zwrotkaV
         }
+        \pionowyOdstepI
       }
 
-      \hspace #0.1
+      \hspace #1
     }
   }
 }
