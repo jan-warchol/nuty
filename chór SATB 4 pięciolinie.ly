@@ -1,53 +1,4 @@
 \version "2.17.3"
-#(set-global-staff-size 17)
-
-\paper {
-  indent = 0 \mm
-  left-margin = 16 \mm
-  right-margin = 15 \mm
-  system-system-spacing #'basic-distance = 16
-  top-markup-spacing #'basic-distance = 6
-}
-
-\header	{
-  title = ""
-  poet = ""
-  composer = ""
-}
-%--------------------------------MELODIA
-melodiaSopranu = \relative f' {
-  \bar "|."
-}
-melodiaAltu = \relative f' {
-  \bar "|."
-}
-melodiaTenorow = \relative f {
-  \bar "|."
-}
-melodiaBasow = \relative f {
-  \bar "|."
-}
-akordy = \chordmode {
-}
-
-%--------------------------------SŁOWA
-tekst = \lyricmode {
-  \set stanza = "1. "
-}
-
-tekstSopranu = \tekst
-tekstAltu = \tekst
-tekstTenorow = \tekst
-tekstBasow = \tekst
-
-zwrotkaII = \markup {
-}
-zwrotkaIII = \markup {
-}
-zwrotkaIV = \markup {
-}
-zwrotkaV = \markup {
-}
 
 %--------------------------------CAŁOŚĆ
 
@@ -118,56 +69,6 @@ zwrotkaV = \markup {
       \override LyricSpace #'minimum-distance = #2
       \override VerticalAxisGroup
       #'nonstaff-unrelatedstaff-spacing #'padding = #0.75
-    }
-  }
-}
-
-\markup \vspace #1
-
-pionowyOdstepI = \markup \vspace #0.75
-
-\markup {
-  \fill-line {
-    \large {
-      \hspace #1
-
-      \column {
-        \line {
-          \bold
-          "2."
-          \hspace #1
-          \zwrotkaII
-        }
-        \pionowyOdstepI
-        \line {
-          \bold
-          "3."
-          \hspace #1
-          \zwrotkaIII
-        }
-        \pionowyOdstepI
-      }
-
-      \hspace #3
-
-      \column {
-        \line {
-          \bold
-          "4."
-          \hspace #1
-          \zwrotkaIV
-        }
-        \pionowyOdstepI
-        \line {
-          \bold
-          "5."
-          \hspace #1
-          \zwrotkaV
-        }
-        \pionowyOdstepI
-      }
-
-      \hspace #1
     }
   }
 }
