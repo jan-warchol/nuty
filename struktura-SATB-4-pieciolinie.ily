@@ -56,3 +56,6 @@
     \new Lyrics \lyricsto bas \tekstBasow
   >>
 }
+
+\layout {
+}
