@@ -24,7 +24,7 @@
 odstepMiedzyZwrotkami = \markup \vspace #1.5
 odstepOdNumeruDoZwrotki = \markup \hspace #1
 
+\include "globalne-ustawienia-formatowania.ily"
 \include "muzyka-i-tekst.ily"
 \include "struktura-SATB-4-pieciolinie.ily"
 \include "struktura-zwrotek.ily"
-\include "globalne-ustawienia-formatowania.ily"
