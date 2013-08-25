@@ -1,18 +1,13 @@
 \version "2.17.3"
-#(set-global-staff-size 17)
 
-\paper {
-  indent = 0 \mm
-  left-margin = 16 \mm
-  right-margin = 15 \mm
-  system-system-spacing #'basic-distance = 16
-  top-markup-spacing #'basic-distance = 6
-}
+%\bookOutputName ""
 
 \header	{
   title = ""
   poet = ""
-  composer = ""
+  composer = "muzyka: Paweł Bębenek"
+  editor = "skład nut: Jan Warchoł"
+  copyright = "© Paweł Bębenek"
 }
 %--------------------------------MELODIA
 melodiaSopranu = \relative f' {

@@ -1,29 +1,25 @@
 \version "2.17.3"
 
-poziomyOdstepI = \markup \hspace #1
-pionowyOdstepI = \markup \vspace #1
-
 \markup {
-  \vspace #2 % żeby nie zlewało się z nutami
   \fill-line {
-    \large {  % FIXME: this doesn't scale line spacing!
+    \scale #powiekszenie-zwrotek {
       \null
 
       \column {
         \line {
           \bold
           "2."
-          \poziomyOdstepI
+          \odstepOdNumeruDoZwrotki
           \zwrotkaII
         }
-        \pionowyOdstepI
+        \odstepMiedzyZwrotkami
         \line {
           \bold
           "3."
-          \poziomyOdstepI
+          \odstepOdNumeruDoZwrotki
           \zwrotkaIII
         }
-        \pionowyOdstepI
+        \odstepMiedzyZwrotkami
       }
 
       \null
@@ -32,17 +28,17 @@ pionowyOdstepI = \markup \vspace #1
         \line {
           \bold
           "4."
-          \poziomyOdstepI
+          \odstepOdNumeruDoZwrotki
           \zwrotkaIV
         }
-        \pionowyOdstepI
+        \odstepMiedzyZwrotkami
         \line {
           \bold
           "5."
-          \poziomyOdstepI
+          \odstepOdNumeruDoZwrotki
           \zwrotkaV
         }
-        \pionowyOdstepI
+        \odstepMiedzyZwrotkami
       }
 
       \null
