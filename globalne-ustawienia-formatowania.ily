@@ -15,6 +15,7 @@
     \Staff
     \consists "Ambitus_engraver"
     \override StaffSymbol #'thickness = #0.9
+    \override StaffSymbol #'ledger-line-thickness = #'(1 . 0.05)
     \override BarLine #'hair-thickness = #2
     \override Stem #'thickness = #1.2
     \override Slur #'thickness = #1.6
