@@ -27,7 +27,10 @@
       }
     >>
 
-    \new Lyrics \lyricsto sopran \tekst
+    \new Lyrics \with {
+      \override VerticalAxisGroup #'staff-affinity = #CENTER
+    }
+    \lyricsto sopran \tekst
 
     \new Staff = panowie <<
       \clef bass
@@ -58,7 +61,6 @@
 \layout {
   \context {
     \Lyrics
-    \override VerticalAxisGroup #'staff-affinity = #CENTER
     \override VerticalAxisGroup
     #'nonstaff-relatedstaff-spacing #'padding = #1.5
   }
