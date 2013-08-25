@@ -1,4 +1,5 @@
 \version "2.17.3"
+\bookOutputSuffix "b5"
 
 #(set-global-staff-size 16.5)
 #(set-default-paper-size "b5")
@@ -23,7 +24,6 @@
 odstepMiedzyZwrotkami = \markup \vspace #1.5
 odstepOdNumeruDoZwrotki = \markup \hspace #1
 
-\bookOutputSuffix "b5"
 \include "muzyka-i-tekst.ily"
 \include "struktura-SATB-4-pieciolinie.ily"
 \include "struktura-zwrotek.ily"

@@ -1,4 +1,5 @@
 \version "2.17.3"
+\bookOutputSuffix "tablet"
 
 #(set-global-staff-size 15)
 
@@ -28,7 +29,6 @@
 odstepMiedzyZwrotkami = \markup \vspace #1
 odstepOdNumeruDoZwrotki = \markup \hspace #1
 
-\bookOutputSuffix "tablet"
 \include "muzyka-i-tekst.ily"
 \include "struktura-SATB-4-pieciolinie.ily"
 \include "struktura-zwrotek.ily"

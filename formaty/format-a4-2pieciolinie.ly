@@ -1,4 +1,5 @@
 \version "2.17.3"
+\bookOutputSuffix "a4-2pieciolinie"
 
 #(set-global-staff-size 18)
 
@@ -23,7 +24,6 @@
 odstepMiedzyZwrotkami = \markup \vspace #2
 odstepOdNumeruDoZwrotki = \markup \hspace #1
 
-\bookOutputSuffix "a4-2pieciolinie"
 \include "muzyka-i-tekst.ily"
 \include "struktura-SATB-2-pieciolinie.ily"
 \include "struktura-zwrotek.ily"
