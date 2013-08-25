@@ -12,8 +12,10 @@
   \compressFullBarRests
   \override NoteHead #'style = #'altdefault
   \context {
-    \Staff
+    \Voice
     \consists "Ambitus_engraver"
+  }
+  \context {
     \override StaffSymbol #'thickness = #0.9
     \override StaffSymbol #'ledger-line-thickness = #'(1 . 0.05)
     \override BarLine #'hair-thickness = #2

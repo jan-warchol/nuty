@@ -10,6 +10,7 @@
       \new Voice = sopran {
         \set Voice.midiInstrument = "clarinet"
         \dynamicUp
+        \override Ambitus #'X-offset = #1.7
 
         \voiceOne
         \melodiaSopranu
@@ -38,6 +39,7 @@
         \override DynamicText #'stencil = ##f
         \override DynamicTextSpanner #'stencil = ##f
         \override TextScript #'stencil = ##f
+        \override Ambitus #'X-offset = #1.7
 
         \voiceOne
         \melodiaTenorow
