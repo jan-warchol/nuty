@@ -19,6 +19,7 @@
 }
 
 #(define powiekszenie-zwrotek '(1.1 . 1.1))
+#(define interlinia '(baseline-skip . 3)) % 3 is Lily default
 odstepMiedzyZwrotkami = \markup \vspace #1.5
 odstepOdNumeruDoZwrotki = \markup \hspace #1
 

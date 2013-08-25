@@ -5,6 +5,7 @@
     \scale #powiekszenie-zwrotek {
       \null
 
+      \override #interlinia
       \column {
         \line {
           \bold
@@ -24,6 +25,7 @@
 
       \null
 
+      \override #interlinia
       \column {
         \line {
           \bold
