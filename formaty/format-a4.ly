@@ -11,7 +11,7 @@
   top-markup-spacing #'basic-distance = 10
   system-system-spacing #'basic-distance = 18
   score-markup-spacing #'basic-distance = 18
-  \include "uklad-tytulow.ily"
+  \include "../szablon/uklad-tytulow.ily"
   %annotate-spacing = ##t
 }
 
@@ -24,7 +24,7 @@
 odstepMiedzyZwrotkami = \markup \vspace #2
 odstepOdNumeruDoZwrotki = \markup \hspace #1
 
-\include "globalne-ustawienia-formatowania.ily"
+\include "../szablon/globalne-ustawienia-formatowania.ily"
 \include "muzyka-i-tekst.ily"
-\include "struktura-SATB-4-pieciolinie.ily"
-\include "struktura-zwrotek.ily"
+\include "../szablon/struktura-SATB-4-pieciolinie.ily"
+\include "../szablon/struktura-zwrotek.ily"
