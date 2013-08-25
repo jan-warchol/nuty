@@ -26,4 +26,5 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
 \bookOutputSuffix "a5"
 \include "muzyka-i-tekst.ily"
 \include "struktura-SATB-4-pieciolinie.ily"
-\include "ustawienia-formatowania.ily"
+\include "struktura-zwrotek.ily"
+\include "globalne-ustawienia-formatowania.ily"
