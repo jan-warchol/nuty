@@ -45,7 +45,7 @@
 % do zaznaczania wątpliwości i pytań
 pytanie =
 #(define-music-function (parser location grob comment offset)
-   (string? string? pair?)
+   (string? markup? pair?)
    (ly:input-warning location "Pytanie:")
    #{
      \once \override $grob #'color = #magenta
