@@ -39,3 +39,17 @@
     %#'nonstaff-unrelatedstaff-spacing #'padding = #0.9
   }
 }
+
+% FUNKCJE POMOCNICZE
+
+% do zaznaczania wątpliwości i pytań
+pytanie =
+#(define-music-function (parser location grob comment offset)
+   (string? string? pair?)
+   (ly:input-warning location "Pytanie:")
+   #{
+     \once \override $grob #'color = #magenta
+     \footnote \markup { \large \bold \with-color #magenta #comment }
+     #offset \markup "" $grob
+   #}
+   )
