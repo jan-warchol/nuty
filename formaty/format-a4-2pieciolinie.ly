@@ -6,8 +6,8 @@
 
 \paper {
   indent = 0 \mm
-  left-margin = 21 \mm
-  right-margin = 20 \mm
+  left-margin = 20 \mm
+  right-margin = 18 \mm
   top-markup-spacing #'basic-distance = 10
   system-system-spacing #'basic-distance = 18
   score-markup-spacing #'basic-distance = 18

@@ -6,7 +6,7 @@
 
 \paper {
   indent = 0 \mm
-  left-margin = 11 \mm
+  left-margin = 12 \mm
   right-margin = 10 \mm
   top-markup-spacing #'basic-distance = 5
   system-system-spacing #'basic-distance = 17
