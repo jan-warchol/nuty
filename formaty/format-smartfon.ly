@@ -1,5 +1,5 @@
 \version "2.17.3"
-\include "../szablon/formaty/default-smartfon-paper.ly"
+\include "../szablon/formaty/default-smartfon-paper.ily"
 
 #(set-global-staff-size 16)
 

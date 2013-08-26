@@ -1,5 +1,5 @@
 \version "2.17.3"
-\include "../szablon/formaty/default-a5-paper.ly"
+\include "../szablon/formaty/default-a5-paper.ily"
 
 #(set-global-staff-size 15)
 

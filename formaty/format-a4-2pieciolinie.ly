@@ -1,5 +1,5 @@
 \version "2.17.3"
-\include "../szablon/formaty/default-a4-2pieciolinie-paper.ly"
+\include "../szablon/formaty/default-a4-2pieciolinie-paper.ily"
 
 #(set-global-staff-size 18)
 
