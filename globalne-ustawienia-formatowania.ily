@@ -11,6 +11,7 @@
 \layout {
   \compressFullBarRests
   \override NoteHead #'style = #'altdefault
+  \set chordNameLowercaseMinor = ##t
   \context {
     \Voice
     \consists "Ambitus_engraver"
