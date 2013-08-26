@@ -1,14 +1,9 @@
 \version "2.17.3"
-\bookOutputSuffix "a4-2pieciolinie"
+\include "../szablon/formaty/default-a4-2pieciolinie-paper.ly"
 
 #(set-global-staff-size 18)
 
-
 \paper {
-  indent = 2 \mm
-  short-indent = 2 \mm
-  left-margin = 18 \mm
-  right-margin = 18 \mm
   top-markup-spacing #'basic-distance = 10
   system-system-spacing #'basic-distance = 18
   score-markup-spacing #'basic-distance = 18

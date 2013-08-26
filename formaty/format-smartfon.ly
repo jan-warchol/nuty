@@ -1,18 +1,9 @@
 \version "2.17.3"
-\bookOutputSuffix "smartfon"
+\include "../szablon/formaty/default-smartfon-paper.ly"
 
 #(set-global-staff-size 16)
 
-
 \paper {
-  paper-height = 9 \cm
-  paper-width = 16 \cm
-  indent = 2 \mm
-  short-indent = 2 \mm
-  left-margin = 5 \mm
-  right-margin = 5 \mm
-  top-margin = 3 \mm
-  bottom-margin = 2 \mm
   top-markup-spacing #'basic-distance = 0
   %top-markup-spacing #'padding = 0
   markup-system-spacing #'basic-distance = 0
