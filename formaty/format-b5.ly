@@ -5,8 +5,9 @@
 #(set-default-paper-size "b5")
 
 \paper {
-  indent = 0 \mm
-  left-margin = 12 \mm
+  indent = 2 \mm
+  short-indent = 2 \mm
+  left-margin = 10 \mm
   right-margin = 10 \mm
   top-markup-spacing #'basic-distance = 7
   system-system-spacing #'basic-distance = 17
