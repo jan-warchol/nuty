@@ -29,7 +29,6 @@ bookTitleMarkup = \markup {
         \right-column {
           \fromproperty #'header:composer
           \fromproperty #'header:arranger
-          \tiny \fromproperty #'header:editor
         }
       }
     }
@@ -37,25 +36,29 @@ bookTitleMarkup = \markup {
 }
 
 tagline = \markup {
-  \pad-to-box #'(0 . 0) #'(0 . 1.6) {
+  \pad-to-box #'(0 . 0) #'(0 . 1.6)
+  \center-column {
     \with-url
     #"http://lilypond.org/"
-    \scale #'(0.57 . 0.57)
-    #(format #f "Nuty złożone w programie LilyPond v~a."
+    \scale #'(0.6 . 0.6)
+    #(format #f "LilyPond v~a"
        (lilypond-version)
        )
   }
 }
 
 oddFooterMarkup = \markup {
+  \override #'(baseline-skip . 1)
   \column {
     \fill-line {
       %% Copyright header field only on first page in each bookpart.
       \on-the-fly #part-first-page {
         \override #'(baseline-skip . 2)
         \center-column {
-          \scale #'(0.9 . 0.9) \fromproperty #'header:copyright
-          \scale #'(0.73 . 0.73) "Wspieraj twórców kupując oryginalne nuty!"
+          \scale #'(0.9 . 0.9)
+          \fromproperty #'header:copyright
+          \scale #'(0.75 . 0.75)
+          "skład nut: Jan Warchoł (jan.warchol@gmail.com, 509 078 203)"
         }
       }
     }
