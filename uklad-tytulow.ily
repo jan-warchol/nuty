@@ -10,7 +10,6 @@ bookTitleMarkup = \markup {
         \huge \larger \larger \bold
         \fromproperty #'header:title
       }
-      \fromproperty #'header:odsteppotytule
       \fill-line {
         \large \bold
         \fromproperty #'header:subtitle
@@ -19,6 +18,7 @@ bookTitleMarkup = \markup {
         \smaller \bold
         \fromproperty #'header:subsubtitle
       }
+      \fromproperty #'header:odsteppotytule
       \fill-line \general-align #Y #-1 {
         \left-column {
           \fromproperty #'header:poet
