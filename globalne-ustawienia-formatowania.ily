@@ -39,6 +39,10 @@
     %\override VerticalAxisGroup
     %#'nonstaff-unrelatedstaff-spacing #'padding = #0.9
   }
+  \context {
+    \Score
+    \override MetronomeMark #'font-size = #1.5
+  }
 }
 
 % FUNKCJE POMOCNICZE
