@@ -31,6 +31,10 @@
       \override VerticalAxisGroup #'staff-affinity = #CENTER
     }
     \lyricsto sopran \tekst
+    \new Lyrics \with {
+      \override VerticalAxisGroup #'staff-affinity = #CENTER
+    }
+    \lyricsto sopran \drugiWers
 
     \new Staff = panowie <<
       \clef bass

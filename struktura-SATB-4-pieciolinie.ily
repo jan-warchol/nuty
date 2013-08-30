@@ -15,6 +15,7 @@
       }
     }
     \new Lyrics \lyricsto sopran \tekstSopranu
+    \new Lyrics \lyricsto sopran \drugiWersSopranu
 
     \new Staff = alt {
       \clef treble
@@ -28,6 +29,7 @@
       }
     }
     \new Lyrics \lyricsto alt \tekstAltu
+    \new Lyrics \lyricsto alt \drugiWersAltu
 
     \new Staff = tenor {
       \clef "treble_8"
@@ -41,6 +43,7 @@
       }
     }
     \new Lyrics \lyricsto tenor \tekstTenorow
+    \new Lyrics \lyricsto tenor \drugiWersTenorow
 
     \new Staff = bas {
       \clef bass
@@ -54,6 +57,7 @@
       }
     }
     \new Lyrics \lyricsto bas \tekstBasow
+    \new Lyrics \lyricsto bas \drugiWersBasow
   >>
 }
 

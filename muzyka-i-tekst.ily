@@ -46,6 +46,14 @@ tekstAltu = \tekst
 tekstTenorow = \tekst
 tekstBasow = \tekst
 
+drugiWers = \lyricmode {
+}
+
+drugiWersSopranu = \drugiWers
+drugiWersAltu = \drugiWers
+drugiWersTenorow = \drugiWers
+drugiWersBasow = \drugiWers
+
 zwrotkaII = \markup {
 }
 zwrotkaIII = \markup {
