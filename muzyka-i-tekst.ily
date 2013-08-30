@@ -10,16 +10,27 @@
   copyright = "© Paweł Bębenek"
 }
 %--------------------------------MELODIA
+metrumitp = {
+  \key c \major
+  \time 4/4
+  \tempo ""
+  \set Timing.beamExceptions = #'()
+  \set Timing.beamHalfMeasure = ##f
+}
 melodiaSopranu = \relative f' {
+  \metrumitp
   \bar "|."
 }
 melodiaAltu = \relative f' {
+  \metrumitp
   \bar "|."
 }
 melodiaTenorow = \relative f {
+  \metrumitp
   \bar "|."
 }
 melodiaBasow = \relative f {
+  \metrumitp
   \bar "|."
 }
 akordy = \chordmode {
