@@ -1,5 +1,4 @@
 \version "2.17.3"
-\bookOutputSuffix "b5"
 #(set-default-paper-size "b5")
 
 \paper {

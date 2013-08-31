@@ -1,5 +1,6 @@
 \version "2.17.3"
 \include "../szablon/formaty/default-smartfon-paper.ily"
+\bookOutputSuffix "smartfon"
 
 #(set-global-staff-size 16)
 

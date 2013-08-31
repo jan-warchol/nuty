@@ -1,5 +1,6 @@
 \version "2.17.3"
 \include "../szablon/formaty/default-b5-paper.ily"
+\bookOutputSuffix "b5"
 
 #(set-global-staff-size 16.5)
 

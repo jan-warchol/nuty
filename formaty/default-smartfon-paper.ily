@@ -1,5 +1,4 @@
 \version "2.17.3"
-\bookOutputSuffix "smartfon"
 
 \paper {
   paper-height = 9 \cm
