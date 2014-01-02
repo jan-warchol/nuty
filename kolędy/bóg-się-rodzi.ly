@@ -29,18 +29,18 @@ melodiaSopranu =
   d2 d4 |
   \break
   cis2. |
-  d4 d2 |
+  d2 d4 |
   cis2. |
   d2 a4 |
   <<
     {
       b4. b8 b b |
-      fis'8. e16 e4 d |
+      cis8. e16 e4 d |
     }
     \new Voice = sopranPierwszy {
       \voiceOne
       \set fontSize = #-2
-      b2 b'4 |
+      b2 b'4-\tweak X-offset -3.4 -\tweak Y-offset 1.6 ^\mp |
       a8 a e e d d |
     }
     \new Lyrics \with { alignAboveContext = sopran }
@@ -66,7 +66,7 @@ melodiaAltu =
     fis8( g a) a fis a |
   }
   e8( fis g) g fis e |
-  fis8. e16 cis4 d |
+  fis8. cis16 e4 d |
   \bar "|."
 }
 
@@ -76,7 +76,7 @@ melodiaTenorow =
   \repeat unfold 2 {
     d8. d'16 d4( cis8) b |
     b8. b16 b4( a8) g |
-    fis8. a16 d8 a g fis |
+    fis8 a d a g fis |
     fis4 e2 |
   }
   \repeat unfold 3 {
@@ -104,7 +104,7 @@ melodiaBasow =
   g4. e8 cis a |
   d8 d d4 fis |
   e4. e8 e e |
-  a,8. a16 cis4 d |
+  a,8. a16 a4 d |
   \bar "|."
 }
 akordy = \chordmode {
@@ -124,7 +124,7 @@ tekstSopranu = \lyricmode {
   \set stanza = "1. "
   Bóg się ro -- dzi, moc  tru -- chle -- je!
   O -- gień krze -- pnie, blask cie -- mnie -- je!
-  Wzgar -- dzo -- ny o -- kry -- ty
+  Wzgar -- dzo -- ny śmier -- tel -- ny
   A Sło -- wo
   za -- mie -- szka -- ło mię -- dzy na -- mi.
 }
