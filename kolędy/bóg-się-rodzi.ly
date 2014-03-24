@@ -2,7 +2,8 @@
 #(ly:set-option 'strokeadjust #t)
 
 \header {
-  title = \markup \column { "Bóg się rodzi" " " " " }
+  title = \markup "Bóg się rodzi"
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 5" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł"
 }
