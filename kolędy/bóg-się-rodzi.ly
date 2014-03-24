@@ -2,7 +2,7 @@
 #(ly:set-option 'strokeadjust #t)
 
 \header {
-  title = "Bóg się rodzi"
+  title = \markup \column { "Bóg się rodzi" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł"
 }
@@ -193,9 +193,9 @@ zwrotkaV = \markup {
   indent = 2 \mm
   system-count = 3
   short-indent = 2 \mm
-  %left-margin = 15 \mm
-  %right-margin = 15 \mm
-  top-markup-spacing #'basic-distance = 8
+  left-margin = 13 \mm
+  right-margin = 13 \mm
+  top-markup-spacing #'basic-distance = 5
   markup-system-spacing #'basic-distance = 18
   system-system-spacing #'basic-distance = 18
   system-system-spacing #'padding = 1
@@ -225,7 +225,7 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
     }
     \new Staff = sopran {
       \clef treble
-      \set Staff.instrumentName = "Sopran "
+      \set Staff.instrumentName = "S "
       \set Staff.shortInstrumentName = "S "
       \new Voice = sopran
       \with { \consists "Ambitus_engraver" } {
@@ -240,7 +240,7 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
     \new Staff = alt
     \with { \consists "Ambitus_engraver" } {
       \clef treble
-      \set Staff.instrumentName = "Alt "
+      \set Staff.instrumentName = "A "
       \set Staff.shortInstrumentName = "A "
       \new Voice = alt {
         \set Staff.midiInstrument = "clarinet"
@@ -254,7 +254,7 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
     \new Staff = tenor
     \with { \consists "Ambitus_engraver" } {
       \clef "treble_8"
-      \set Staff.instrumentName = "Tenor "
+      \set Staff.instrumentName = "T "
       \set Staff.shortInstrumentName = "T "
       \new Voice = tenor {
         \set Staff.midiInstrument = "clarinet"
@@ -268,7 +268,7 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
     \new Staff = bas
     \with { \consists "Ambitus_engraver" } {
       \clef bass
-      \set Staff.instrumentName = "Bas "
+      \set Staff.instrumentName = "B "
       \set Staff.shortInstrumentName = "B "
       \new Voice = bas {
         \set Staff.midiInstrument = "clarinet"
