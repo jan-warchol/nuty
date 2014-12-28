@@ -68,7 +68,7 @@ melodiaAltu =
   }
   g4. b8 a g |
   fis8 fis fis4 fis |
-  e8( fis g) g fis e |
+  e4. g8 fis e |
   fis8. cis16 e4 d |
   \bar "|."
 }
@@ -105,8 +105,8 @@ melodiaBasow =
   g4. e8 cis a |
   d8 d d4 fis |
   g4. g8 fis e |
-  a,8 a a4 a |
-  e'4. e8 e e |
+  a,8 a a4 d |
+  e4. e8 e e |
   a,8. a16 a4 d |
   \bar "|."
 }
