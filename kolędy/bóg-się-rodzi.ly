@@ -3,7 +3,7 @@
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 6" " " " " }
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 7" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł"
 }
@@ -67,9 +67,9 @@ melodiaAltu =
     e8( fis g) g fis e |
     fis8( g a) a fis a |
   }
-  g4. b8 a g |
+  e8( fis g) e8 dis e |
   fis8 fis fis4 fis |
-  e4. g8 fis e |
+  e8( fis g) g8 fis e |
   fis8. cis16 e4 d |
   \bar "|."
 }
@@ -105,7 +105,7 @@ melodiaBasow =
     g'4. e8 cis a |
     d8 d d4 fis |
   }
-  g4. g8 fis e |
+  e4. g8 fis e |
   a,8 a a4 d |
   e4. e8 e e |
   a,8. a16 a4 d |
@@ -128,7 +128,7 @@ tekstSopranu = \lyricmode {
   \set stanza = "1. "
   Bóg się ro -- dzi, moc  tru -- chle -- je!
   O -- gień krze -- pnie, blask cie -- mnie -- je!
-  Wzgar -- dzo -- ny śmier -- tel -- ny
+  Wzgar -- dzo -- ny \break śmier -- tel -- ny
   A Sło -- wo
   za -- mie -- szka -- ło mię -- dzy na -- mi.
 }
