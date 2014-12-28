@@ -26,11 +26,10 @@ melodiaSopranu =
   d4 cis2 |
   a2 e4 |
   fis4 e2 |
-  cis'2. |
-  d2 d4 |
-  \break
-  cis2. |
-  d2 d4 |
+  \repeat unfold 2 {
+    cis'2. |
+    d2 d4 |
+  }
   \override Hairpin.height = #0.5
   \override Hairpin.thickness = #0.6
   << g,2. { s4. s \< } >> |
@@ -102,10 +101,10 @@ melodiaBasow =
     fis4 fis b, |
     d4 a2 |
   }
-  g'4. e8 cis a |
-  d8 d d4 fis |
-  g4. e8 cis a |
-  d8 d d4 fis |
+  \repeat unfold 2 {
+    g'4. e8 cis a |
+    d8 d d4 fis |
+  }
   g4. g8 fis e |
   a,8 a a4 d |
   e4. e8 e e |
