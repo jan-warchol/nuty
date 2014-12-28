@@ -3,7 +3,7 @@
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 5" " " " " }
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 6" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł"
 }
@@ -31,8 +31,10 @@ melodiaSopranu =
   \break
   cis2. |
   d2 d4 |
-  g,2. |
-  d'2 a4 |
+  \override Hairpin.height = #0.5
+  \override Hairpin.thickness = #0.6
+  << g,2. { s4. s \< } >> |
+  << d'2\! -> { s8 s4\> s8\! } >> a4 |
   <<
     {
       b4. b8 b b |
@@ -41,7 +43,7 @@ melodiaSopranu =
     \new Voice = sopranPierwszy {
       \voiceOne
       \set fontSize = #-2
-      b2 b'4-\tweak X-offset -3.4 -\tweak Y-offset 1.6 ^\mp |
+      b2-\tweak X-offset -2 ^\mp b'4 |
       a8 a e e d d |
     }
     \new Lyrics \with { alignAboveContext = sopran }
@@ -149,9 +151,9 @@ tekstTenorow = \lyricmode {
 }
 tekstBasow = \lyricmode {
   \set stanza = "1. "
-  Bóg się ro -- dzi, moc  tru -- chle -- je,
+  Bóg się ro -- dzi, moc  tru -- \once \tweak X-offset 0 LyricText chle -- je,
   Pan ob -- na -- żo -- ny!
-  O -- gień krze -- pnie, blask cie -- mnie -- je,
+  O -- gień krze -- pnie, blask cie -- \once \tweak X-offset 0 LyricText mnie -- je,
   ma Nie -- skoń -- czo -- ny!
   \wzgardzony
 }
