@@ -3,7 +3,7 @@
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 8" " " " " }
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 9" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł"
 }
@@ -34,12 +34,12 @@ melodiaSopranu =
   }
   \override Hairpin.height = #0.5
   \override Hairpin.thickness = #0.6
-  << g,2. { s4. s \< } >> |
-  << d'2\! -- { s8 s4\> s8\! } >> d4 |
+  << { g,2( b4) } { s4. s \< } >> |
+  << d2\! -- { s8 s4\> s8\! } >> d4 |
   <<
     {
       b4. b8 b b |
-      cis8. e16 e4 d |
+      cis8. a16 cis4 a |
     }
     \new Voice = sopranPierwszy {
       \voiceOne
@@ -61,19 +61,19 @@ melodiaAltu =
   \metrumitp
   <>\mp
   \repeat unfold 2 {
-    d8 e fis e e d |
-    d8 e fis e e d |
-    d8 e fis e e d |
+    d8 e fis fis e fis |
+    fis8 e fis fis e fis |
+    d8 fis fis e e d |
     d4 cis2 |
   }
   \repeat unfold 2 {
     e8( fis g) g fis e |
-    fis8( g a) a fis a |
+    fis8( g a) fis fis a |
   }
-  e4. b'8 a g |
+  g4. e8 fis e |
   fis8 fis fis4 fis |
   e4. g8 fis e |
-  fis8. cis16 e4 d |
+  fis8. e16 e4 d |
   \bar "|."
 }
 
@@ -101,16 +101,16 @@ melodiaBasow =
   \metrumitp
   <>\mp
   \repeat unfold 2 {
-    d8. d16 d4( cis8) b |
+    d8. d16 d4( a8) b |
     b8. fis'16 fis4 fis |
-    fis4 fis b, |
+    d4 fis b, |
     d4 a2 |
   }
   \repeat unfold 2 {
     g'4. e8 cis a |
     d8 d d4 fis |
   }
-  g4. g8 fis e |
+  g4. e8 fis e |
   a,8 a a4 d |
   e4. e8 e e |
   a,8. a16 a4 d |
