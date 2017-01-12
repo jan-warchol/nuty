@@ -3,7 +3,7 @@
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 7" " " " " }
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 8" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł"
 }
@@ -19,6 +19,7 @@ melodiaSopranu =
 \relative f' {
   \metrumitp
   <>^\markup \italic "soprany bardzo delikatnie"
+  <>\pp
   a2 cis4 |
   d4 cis2 |
   a2 e'4 |
@@ -43,7 +44,7 @@ melodiaSopranu =
     \new Voice = sopranPierwszy {
       \voiceOne
       \set fontSize = #-2
-      b2-\tweak X-offset -2 ^\mp b'4 |
+      b2 b'4-\tweak X-offset -3 ^\mp |
       a8 a e e d d |
     }
     \new Lyrics \with { alignAboveContext = sopran }
@@ -58,6 +59,7 @@ melodiaSopranu =
 melodiaAltu =
 \relative f' {
   \metrumitp
+  <>\mp
   \repeat unfold 2 {
     d8 e fis e e d |
     d8 e fis e e d |
@@ -78,6 +80,7 @@ melodiaAltu =
 melodiaTenorow =
 \relative f {
   \metrumitp
+  <>\f
   \repeat unfold 2 {
     d8. d'16 d4( cis8) b |
     b8. b16 b4( a8) g |
@@ -96,6 +99,7 @@ melodiaTenorow =
 melodiaBasow =
 \relative f {
   \metrumitp
+  <>\mp
   \repeat unfold 2 {
     d8. d16 d4( cis8) b |
     b8. fis'16 fis4 fis |
@@ -232,7 +236,7 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
       \set Staff.shortInstrumentName = "S "
       \new Voice = sopran
       \with { \consists "Ambitus_engraver" } {
-        \set Staff.midiInstrument = "clarinet"
+        \set Staff.midiInstrument = "choir aahs"
         \dynamicUp
         \tupletUp
         \melodiaSopranu
@@ -246,7 +250,7 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
       \set Staff.instrumentName = "A "
       \set Staff.shortInstrumentName = "A "
       \new Voice = alt {
-        \set Staff.midiInstrument = "clarinet"
+        \set Staff.midiInstrument = "choir aahs"
         \dynamicUp
         \tupletUp
         \melodiaAltu
@@ -260,7 +264,7 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
       \set Staff.instrumentName = "T "
       \set Staff.shortInstrumentName = "T "
       \new Voice = tenor {
-        \set Staff.midiInstrument = "clarinet"
+        \set Staff.midiInstrument = "choir aahs"
         \dynamicUp
         \tupletUp
         \melodiaTenorow
@@ -274,7 +278,7 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
       \set Staff.instrumentName = "B "
       \set Staff.shortInstrumentName = "B "
       \new Voice = bas {
-        \set Staff.midiInstrument = "clarinet"
+        \set Staff.midiInstrument = "choir aahs"
         \dynamicUp
         \tupletUp
         \melodiaBasow
