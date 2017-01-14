@@ -186,19 +186,19 @@ zwrotkaV = \markup {
 
 %--------------------------------USTAWIENIA
 
-#(set-global-staff-size 16)
+#(set-global-staff-size 18)
 
 \paper {
   indent = 2 \mm
-  system-count = 3
+  system-count = 4
   short-indent = 2 \mm
   left-margin = 13 \mm
   right-margin = 13 \mm
-  top-markup-spacing #'basic-distance = 5
-  markup-system-spacing #'basic-distance = 24
-  system-system-spacing #'basic-distance = 18
-  system-system-spacing #'padding = 1
-  score-markup-spacing #'basic-distance = 15
+  %top-markup-spacing #'basic-distance = 5
+  markup-system-spacing #'basic-distance = 2
+  system-system-spacing #'basic-distance = 17
+  system-system-spacing #'padding = 0
+  %score-markup-spacing #'basic-distance = 15
   %ragged-last-bottom = ##f
 }
 
@@ -223,61 +223,44 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
       \set chordNameLowercaseMinor = ##t
       \akordy
     }
-    \new Staff = sopran {
+    \new Staff = panie <<
       \clef treble
-      \set Staff.instrumentName = "S "
-      \set Staff.shortInstrumentName = "S "
       \new Voice = sopran
       \with { \consists "Ambitus_engraver" } {
         \set Staff.midiInstrument = "choir aahs"
         \dynamicUp
         \tupletUp
+        \voiceOne
         \melodiaSopranu
       }
-    }
-    \new Lyrics \lyricsto sopran \tekstSopranu
-
-    \new Staff = alt
-    \with { \consists "Ambitus_engraver" } {
-      \clef treble
-      \set Staff.instrumentName = "A "
-      \set Staff.shortInstrumentName = "A "
       \new Voice = alt {
         \set Staff.midiInstrument = "choir aahs"
-        \dynamicUp
-        \tupletUp
+        \dynamicDown
+        \tupletDown
+        \voiceTwo
         \melodiaAltu
       }
-    }
-    \new Lyrics \lyricsto alt \tekstAltu
+    >>
+    \new Lyrics = tekst {}
 
-    \new Staff = tenor
-    \with { \consists "Ambitus_engraver" } {
-      \clef "treble_8"
-      \set Staff.instrumentName = "T "
-      \set Staff.shortInstrumentName = "T "
+    \new Staff = panowie <<
+      \clef bass
       \new Voice = tenor {
         \set Staff.midiInstrument = "choir aahs"
         \dynamicUp
         \tupletUp
+        \voiceOne
         \melodiaTenorow
       }
-    }
-    \new Lyrics \lyricsto tenor \tekstTenorow
-
-    \new Staff = bas
-    \with { \consists "Ambitus_engraver" } {
-      \clef bass
-      \set Staff.instrumentName = "B "
-      \set Staff.shortInstrumentName = "B "
       \new Voice = bas {
         \set Staff.midiInstrument = "choir aahs"
-        \dynamicUp
-        \tupletUp
+        \dynamicDown
+        \tupletDown
+        \voiceTwo
         \melodiaBasow
       }
-    }
-    \new Lyrics \lyricsto bas \tekstBasow
+    >>
+    \context Lyrics = tekst \lyricsto tenor \tekstTenorow
   >>
   \layout {
   }
