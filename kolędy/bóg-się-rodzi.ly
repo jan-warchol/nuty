@@ -34,8 +34,8 @@ melodiaSopranu =
   }
   \override Hairpin.height = #0.5
   \override Hairpin.thickness = #0.6
-  << { g,2( b4) } { s4. s \< } >> |
-  << d2\! -- { s8 s4\> s8\! } >> d4 |
+  << { b	2( b4) } { s4. s \< } >> |
+  << cis2\! -- { s8 s4\> s8\! } >> d4 |
   <<
     {
       b4. b8 b b |
@@ -63,15 +63,15 @@ melodiaAltu =
   \repeat unfold 2 {
     d8 e fis fis e fis |
     fis8 e fis fis e fis |
-    d8 fis fis e e d |
+    d8 fis a e e d |
     d4 cis2 |
   }
   \repeat unfold 2 {
-    e8( fis g) g fis e |
+    e4. g8 fis e |
     fis8( g a) fis fis a |
   }
-  g4. e8 fis e |
-  fis8 fis fis4 fis |
+  d,4. e8 fis e |
+  e8 e e4 fis |
   e4. g8 fis e |
   fis8. e16 e4 d |
   \bar "|."
@@ -102,7 +102,7 @@ melodiaBasow =
   <>\mp
   \repeat unfold 2 {
     d8. d16 d4( a8) b |
-    b8. fis'16 fis4 fis |
+    b8. fis'16 fis4 fis8( e) |
     d4 fis b, |
     d4 a2 |
   }
@@ -112,7 +112,7 @@ melodiaBasow =
   }
   g4. e8 fis e |
   a,8 a a4 d |
-  e4. e8 e e |
+  e4. e8 dis e |
   a,8. a16 a4 d |
   \bar "|."
 }
