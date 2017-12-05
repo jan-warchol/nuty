@@ -3,9 +3,9 @@
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 8" " " " " }
+%  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 8" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
-  composer = "opracowanie: Kasia Szymanek, Janek Warchoł"
+  composer = "opracowanie: Ktarzyna Szymanek, Jan Warchoł"
 }
 
 %--------------------------------MELODIA
@@ -19,7 +19,7 @@ melodiaSopranu =
 \relative f' {
   \metrumitp
   <>^\markup \italic "soprany bardzo delikatnie"
-  <>\pp
+  <>\p
   a2 cis4 |
   d4 cis2 |
   a2 e'4 |
@@ -28,6 +28,7 @@ melodiaSopranu =
   d4 cis2 |
   a2 e4 |
   fis4 e2 |
+  \repeat volta 2 {
   \repeat unfold 2 {
     cis'2. |
     d2 d4 |
@@ -53,28 +54,29 @@ melodiaSopranu =
       za -- mie -- szka -- ło mię -- dzy na -- mi.
     }
   >>
-  \bar "|."
+  }
 }
 
 melodiaAltu =
 \relative f' {
   \metrumitp
-  <>\mp
+  <>\mf
   \repeat unfold 2 {
     d8 e fis e e d |
     d8 e fis e e d |
     d8 e fis e e d |
     d4 cis2 |
   }
+  \repeat volta 2 {
   \repeat unfold 2 {
     e8( fis g) g fis e |
     fis8( g a) a fis a |
   }
-  e4. b'8 a g |
+  g4. b8 a g |
   fis8 fis fis4 fis |
   e4. g8 fis e |
   fis8. cis16 e4 d |
-  \bar "|."
+  }
 }
 
 melodiaTenorow =
@@ -87,25 +89,27 @@ melodiaTenorow =
     fis8 a d a g fis |
     fis4 e2 |
   }
+  \repeat volta 2 {
   \repeat unfold 3 {
     g4. e8 fis g |
     a8 a fis( a) a4 |
   }
   g4. e8 fis g |
   a8. cis,16 e4 d |
-  \bar "|."
+  }
 }
 
 melodiaBasow =
 \relative f {
   \metrumitp
-  <>\mp
+  <>\mf
   \repeat unfold 2 {
     d8. d16 d4( cis8) b |
     b8. fis'16 fis4 fis |
     fis4 fis b, |
     d4 a2 |
   }
+  \repeat volta 2 {
   \repeat unfold 2 {
     g'4. e8 cis a |
     d8 d d4 fis |
@@ -114,7 +118,7 @@ melodiaBasow =
   a,8 a a4 d |
   e4. e8 e e |
   a,8. a16 a4 d |
-  \bar "|."
+  }
 }
 akordy = \chordmode {
 }
@@ -126,17 +130,47 @@ wzgardzony = \lyricmode {
   śmier -- tel -- ny Król nad wie -- ka -- mi!
   A Sło -- wo Cia -- łem się sta -- ło
   i mie -- szka -- ło mię -- dzy na -- mi.
-  i mie -- szka -- ło mię -- dzy na -- mi.
+}
+niemalo = \lyricmode {
+  Nie -- ma -- ło cier -- piał, nie -- ma -- ło,
+  żeś -- my by -- li winn -- ni sa -- mi.
+}
+ubodzy = \lyricmode {
+  U -- bo -- dzy was to spot -- ka -- ło
+  wi -- tać go przed bo -- ga -- cza -- mi!
+}
+domNasz = \lyricmode {
+  Dom nasz i ma -- ję -- tność ca -- łą,
+  i wszyst -- kie wios -- ki z_mia -- sta -- mi.
 }
 
 tekstSopranu = \lyricmode {
   \set stanza = "1. "
   Bóg się ro -- dzi, moc  tru -- chle -- je!
   O -- gień krze -- pnie, blask cie -- mnie -- je!
-  Wzgar -- dzo -- ny \break śmier -- tel -- ny
+  Wzgar -- dzo -- ny śmier -- tel -- ny,
   A Sło -- wo
   za -- mie -- szka -- ło mię -- dzy na -- mi.
 }
+tekstSopranuDwa = \lyricmode {
+  \set stanza = "2. "
+  Cóż masz nie -- bo nad zie -- mia -- ny?
+  Wszedł mię -- dzy lud u -- ko -- cha -- ny
+  Nie -- ma -- ło my sa -- mi,
+}
+tekstSopranuTrzy = \lyricmode {
+  \set stanza = "3. "
+  W_nę -- dznej szo -- pie u -- ro -- dzo -- ny,
+  Cóż jest, czym był o -- to -- czo -- ny?
+  U -- bo -- dzy wi -- tać Go,
+}
+tekstSopranuCztery = \lyricmode {
+  \set stanza = "4. "
+  Pod -- nieś rę -- kę, Bo -- że Dzie -- cię,
+  W_do -- brych ra -- dach, w_do -- brym by -- cie
+  Ma -- jęt -- ność z_mia -- sta -- mi,
+}
+
 tekstAltu = \lyricmode {
   \set stanza = "1. "
   Bóg się ro -- dzi, ro -- dzi, wszel -- ka moc  tru -- chle -- je,
@@ -145,6 +179,31 @@ tekstAltu = \lyricmode {
   ma gra -- ni -- ce Nie -- skoń -- czo -- ny!
   \wzgardzony
 }
+tekstAltuDwa = \lyricmode {
+  \set stanza = "2. "
+  Cóż masz nie -- bo, nie -- bo nad nis -- kie zie -- mia -- ny?
+  Bóg po -- rzu -- cił szczę -- ście two -- je.
+  Wszedł mię -- dzy, mię -- dzy lud swój tak u -- ko -- cha -- ny
+  dzie -- ląc z_nim tru -- dy i zno -- je.
+  \niemalo
+}
+tekstAltuTrzy = \lyricmode {
+  \set stanza = "3. "
+  W_nę -- dznej szo -- pie, szo -- pie nę -- dznie u -- ro -- dzo -- ny,
+  żłób mu za ko -- leb -- kę da -- no.
+  Cóż jest, czym był, czym był tyl -- ko o -- to -- czo -- ny?
+  By -- dło, pa -- ste -- rze i sia -- no.
+  \ubodzy
+}
+tekstAltuCztery = \lyricmode {
+  \set stanza = "4. "
+  Pod -- nieś rę -- kę, rę -- kę, Bo -- że Dzie -- cię, Dzie -- cię,
+  bło -- go -- sław Oj -- czy -- znę mi -- łą!
+  W_do -- brych ra -- dach, ra -- dach, w_do -- brym by -- cie, by -- cie
+  wspie -- raj jej si -- łę Swą si -- łą.
+  \domNasz
+}
+
 tekstTenorow = \lyricmode {
   \set stanza = "1. "
   Bóg się ro -- dzi, moc  tru -- chle -- je,
@@ -153,13 +212,61 @@ tekstTenorow = \lyricmode {
   ma gra -- ni -- ce Nie -- skoń -- czo -- ny!
   \wzgardzony
 }
+tekstTenorowDwa = \lyricmode {
+  \set stanza = "2. "
+  Cóż masz nie -- bo nad zie -- mia -- ny?
+  Bóg po -- rzu -- cił szczę -- ście two -- je.
+  Wszedł mię -- dzy lud u -- ko -- cha -- ny
+  dzie -- ląc z_nim tru -- dy i zno -- je.
+  \niemalo
+}
+tekstTenorowTrzy = \lyricmode {
+  \set stanza = "3. "
+  W_nę -- dznej szo -- pie u -- ro -- dzo -- ny,
+  żłób mu za ko -- leb -- kę da -- no.
+  Cóż jest, czym był o -- to -- czo -- ny?
+  By -- dło, pa -- ste -- rze i sia -- no.
+  \ubodzy
+}
+tekstTenorowCztery = \lyricmode {
+  \set stanza = "4. "
+  Pod -- nieś rę -- kę, Bo -- że Dzie -- cię,
+  bło -- go -- sław Oj -- czy -- znę mi -- łą!
+  W_do -- brych ra -- dach, w_do -- brym by -- cie
+  wspie -- raj jej si -- łę Swą si -- łą.
+  \domNasz
+}
+
 tekstBasow = \lyricmode {
-  \set stanza = "1. "
-  Bóg się ro -- dzi, moc  tru -- \once \tweak X-offset 0 LyricText chle -- je,
+  Bóg się ro -- dzi, moc  tru -- chle -- je,
   Pan ob -- na -- żo -- ny!
-  O -- gień krze -- pnie, blask cie -- \once \tweak X-offset 0 LyricText mnie -- je,
+  O -- gień krze -- pnie, blask cie -- mnie -- je,
   ma Nie -- skoń -- czo -- ny!
   \wzgardzony
+}
+tekstBasowDwa = \lyricmode {
+  \set stanza = "2. "
+  Cóż masz nie -- bo nad zie -- mia -- ny?
+  po -- rzu -- cił two -- je.
+  Wszedł mię -- dzy lud u -- ko -- cha -- ny
+  tru -- dy i zno -- je.
+  \niemalo
+}
+tekstBasowTrzy = \lyricmode {
+  \set stanza = "3. "
+  W_nę -- dznej szo -- pie u -- ro -- dzo -- ny,
+  ko -- leb -- kę da -- no.
+  Cóż jest, czym był o -- to -- czo -- ny?
+  By -- dło i sia -- no.
+  \ubodzy
+}
+tekstBasowCztery = \lyricmode {
+  \set stanza = "4. "
+  Pod -- nieś rę -- kę, Bo -- że Dzie -- cię,
+  Oj -- czy -- znę mi -- łą!
+  W_do -- brych ra -- dach, w_do -- brym by -- cie
+  wspie -- raj Swą si -- łą.
+  \domNasz
 }
 
 zwrotkaII = \markup \column {
@@ -243,6 +350,9 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
       }
     }
     \new Lyrics \lyricsto sopran \tekstSopranu
+    \new Lyrics \lyricsto sopran \tekstSopranuDwa
+    \new Lyrics \lyricsto sopran \tekstSopranuTrzy
+    \new Lyrics \lyricsto sopran \tekstSopranuCztery
 
     \new Staff = alt
     \with { \consists "Ambitus_engraver" } {
@@ -257,6 +367,9 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
       }
     }
     \new Lyrics \lyricsto alt \tekstAltu
+    \new Lyrics \lyricsto alt \tekstAltuDwa
+    \new Lyrics \lyricsto alt \tekstAltuTrzy
+    \new Lyrics \lyricsto alt \tekstAltuCztery
 
     \new Staff = tenor
     \with { \consists "Ambitus_engraver" } {
@@ -271,6 +384,9 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
       }
     }
     \new Lyrics \lyricsto tenor \tekstTenorow
+    \new Lyrics \lyricsto tenor \tekstTenorowDwa
+    \new Lyrics \lyricsto tenor \tekstTenorowTrzy
+    \new Lyrics \lyricsto tenor \tekstTenorowCztery
 
     \new Staff = bas
     \with { \consists "Ambitus_engraver" } {
@@ -285,6 +401,9 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
       }
     }
     \new Lyrics \lyricsto bas \tekstBasow
+    \new Lyrics \lyricsto bas \tekstBasowDwa
+    \new Lyrics \lyricsto bas \tekstBasowTrzy
+    \new Lyrics \lyricsto bas \tekstBasowCztery
   >>
   \layout {
   }
@@ -293,43 +412,43 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
   }
 }
 
-\markup {
-  \fill-line {
-    \scale #powiekszenie-zwrotek {
-      \null
+%\markup {
+%  \fill-line {
+%    \scale #powiekszenie-zwrotek {
+%      \null
 
-      \override #interlinia
-      \line {
-        \bold
-        "2."
-        \odstepOdNumeruDoZwrotki
-        \zwrotkaII
-      }
+%      \override #interlinia
+%      \line {
+%        \bold
+%        "2."
+%        \odstepOdNumeruDoZwrotki
+%        \zwrotkaII
+%      }
 
-      \null
+%      \null
 
-      \override #interlinia
-      \line {
-        \bold
-        "3."
-        \odstepOdNumeruDoZwrotki
-        \zwrotkaIII
-      }
+%      \override #interlinia
+%      \line {
+%        \bold
+%        "3."
+%        \odstepOdNumeruDoZwrotki
+%        \zwrotkaIII
+%      }
 
-      \null
+%      \null
 
-      \override #interlinia
-      \line {
-        \bold
-        "4."
-        \odstepOdNumeruDoZwrotki
-        \zwrotkaIV
-      }
+%      \override #interlinia
+%      \line {
+%        \bold
+%        "4."
+%        \odstepOdNumeruDoZwrotki
+%        \zwrotkaIV
+%      }
 
-      \null
-    }
-  }
-}
+%      \null
+%    }
+%  }
+%}
 
 %--------------------------------STOPKA
 
