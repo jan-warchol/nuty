@@ -2,10 +2,10 @@
 #(ly:set-option 'strokeadjust #t)
 
 \header {
-  title = \markup "Bóg się rodzi"
+  title = \markup \column { \larger "Bóg się rodzi" " " " " }
 %  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 8" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
-  composer = "opracowanie: Ktarzyna Szymanek, Jan Warchoł"
+  composer = "opracowanie: Katarzyna Szymanek, Jan Warchoł"
 }
 
 %--------------------------------MELODIA
@@ -305,14 +305,16 @@ zwrotkaV = \markup {
 
 \paper {
   indent = 2 \mm
-  system-count = 3
+  %system-count = 3
   short-indent = 2 \mm
-  left-margin = 13 \mm
-  right-margin = 13 \mm
+  left-margin = 15 \mm
+  right-margin = 15 \mm
   top-markup-spacing #'basic-distance = 5
   markup-system-spacing #'basic-distance = 24
-  system-system-spacing #'basic-distance = 18
-  system-system-spacing #'padding = 1
+  top-system-spacing #'basic-distance = 10
+  system-system-spacing #'basic-distance = 22
+  system-system-spacing #'padding = 7
+  last-bottom-spacing #'basic-distance = 25
   score-markup-spacing #'basic-distance = 15
   %ragged-last-bottom = ##f
 }
