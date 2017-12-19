@@ -22,9 +22,9 @@ melodiaSopranu =
   <>\pp
   a2 cis4 |
   d4 cis2 |
-  a2 e'4 |
+  a2 e4 |
   fis4 e2 |
-  a,2 cis4 |
+  a2 cis4 |
   d4 cis2 |
   a2 e4 |
   fis4 e2 |
@@ -41,6 +41,7 @@ melodiaSopranu =
       b4. b8 b b |
       cis8. a16 cis4 a |
     }
+    %{
     \new Voice = sopranPierwszy {
       \voiceOne
       \set fontSize = #-2
@@ -52,6 +53,7 @@ melodiaSopranu =
       \set fontSize = #-2
       za -- mie -- szka -- ło mię -- dzy na -- mi.
     }
+    %}
   >>
   \bar "|."
 }
