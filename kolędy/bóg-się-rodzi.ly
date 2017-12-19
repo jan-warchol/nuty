@@ -13,11 +13,12 @@ metrumitp = {
   \key d \major
   \time 3/4
   \set Timing.beamExceptions = #'()
-  \tempo ""
+  \tempo "Trochę tajemniczo"
 }
 melodiaSopranu =
 \relative f' {
   \metrumitp
+  <>^\markup \italic "soprany bardzo delikatnie"
   a2 cis4 |
   d4 cis2 |
   a2 e'4 |
@@ -189,7 +190,7 @@ zwrotkaV = \markup {
 
 %--------------------------------USTAWIENIA
 
-#(set-global-staff-size 16.5)
+#(set-global-staff-size 16)
 
 \paper {
   indent = 2 \mm
@@ -198,7 +199,7 @@ zwrotkaV = \markup {
   left-margin = 13 \mm
   right-margin = 13 \mm
   top-markup-spacing #'basic-distance = 5
-  markup-system-spacing #'basic-distance = 18
+  markup-system-spacing #'basic-distance = 24
   system-system-spacing #'basic-distance = 18
   system-system-spacing #'padding = 1
   score-markup-spacing #'basic-distance = 15
