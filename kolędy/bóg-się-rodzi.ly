@@ -3,7 +3,7 @@
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 9" " " " " }
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 10" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł"
 }
@@ -61,10 +61,10 @@ melodiaAltu =
   \metrumitp
   <>\mp
   \repeat unfold 2 {
-    d8 e fis fis e fis |
-    fis8 e fis fis e fis |
+    d8 e fis e e fis |
+    fis8 e fis fis e e |
     d8 fis a e e d |
-    d4 cis2 |
+    a4 cis2 |
   }
   \repeat unfold 2 {
     e4. g8 fis e |
