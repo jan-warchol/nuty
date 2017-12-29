@@ -1,11 +1,11 @@
-\version "2.18.2"
+\version "2.19.0"
 #(ly:set-option 'strokeadjust #t)
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 10" " " " " }
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 11" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
-  composer = "opracowanie: Kasia Szymanek, Janek Warchoł"
+  composer = "opracowanie: Kasia Szymanek, Janek Warchoł, Ania Abaloszewa"
 }
 
 %--------------------------------MELODIA
@@ -34,12 +34,12 @@ melodiaSopranu =
   }
   \override Hairpin.height = #0.5
   \override Hairpin.thickness = #0.6
-  << { b	2( b4) } { s4. s \< } >> |
+  << { b	2( cis4) } { s4. s \< } >> |
   << cis2\! -- { s8 s4\> s8\! } >> d4 |
   <<
     {
       b4. b8 b b |
-      cis8. a16 cis4 a |
+      cis8. a16 cis4 d |
     }
     %{
     \new Voice = sopranPierwszy {
@@ -63,19 +63,19 @@ melodiaAltu =
   \metrumitp
   <>\mp
   \repeat unfold 2 {
-    d8 e fis e e fis |
-    fis8 e fis fis e e |
-    d8 fis a e e d |
+    fis8 g fis e g4 |
+    fis8 e fis4 cis |
+    d8 fis a fis e d |
     a4 cis2 |
   }
   \repeat unfold 2 {
     e4. g8 fis e |
     fis8( g a) fis fis a |
   }
-  d,4. e8 fis e |
+  d,4. e8 a e |
   e8 e e4 fis |
-  e4. g8 fis e |
-  fis8. e16 e4 d |
+  e4. g8 a g |
+  e8. e16 g4 fis |
   \bar "|."
 }
 
@@ -103,17 +103,17 @@ melodiaBasow =
   \metrumitp
   <>\mp
   \repeat unfold 2 {
-    d8. d16 d4( a8) b |
-    b8. fis'16 fis4 fis8( e) |
+    d8. d16 d4 a |
+    b8. fis'16 fis4 fis |
     d4 fis b, |
     d4 a2 |
   }
   \repeat unfold 2 {
-    g'4. e8 cis a |
+    a4. e'8 cis a |
     d8 d d4 fis |
   }
-  g4. e8 fis e |
-  a,8 a a4 d |
+  e4. e8 e a, |
+  a8 a a4 d |
   e4. e8 dis e |
   a,8. a16 a4 d |
   \bar "|."
@@ -134,16 +134,16 @@ wzgardzony = \lyricmode {
 tekstSopranu = \lyricmode {
   \set stanza = "1. "
   Bóg się ro -- dzi, moc  tru -- chle -- je!
-  O -- gień krze -- pnie, blask cie -- mnie -- je!
+  O -- gień krze -- pnie, jas -- ny blask cie -- mnie -- je!
   Wzgar -- dzo -- ny \break śmier -- tel -- ny
   A Sło -- wo
   za -- mie -- szka -- ło mię -- dzy na -- mi.
 }
 tekstAltu = \lyricmode {
   \set stanza = "1. "
-  Bóg się ro -- dzi, ro -- dzi, wszel -- ka moc  tru -- chle -- je,
+  Bóg się ro --- dzi,  moc  tru -- chle -- je,
   Pan nie -- bio -- sów ob -- na -- żo -- ny!
-  O -- gień krze -- pnie,  krze -- pnie, jas -- ny blask cie -- mnie -- je,
+  O -- gień krze --- pnie, blask cie -- mnie -- je,
   ma gra -- ni -- ce Nie -- skoń -- czo -- ny!
   \wzgardzony
 }
