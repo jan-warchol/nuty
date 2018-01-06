@@ -3,7 +3,7 @@
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 15" " " " " }
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 16" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł, Ania Abaloszewa"
 }
@@ -30,10 +30,10 @@ melodiaSopranu =
     cis'2. |
     d2 d4 |
   }
-  b2( cis4)
-  d2 -- b4 |
-  b4. b8 b b |
-  cis8. a16 cis4 d |
+  g,4. e8 fis g |
+  a8 a fis( a) a4 |
+  g4. e8 fis g |
+  a8. cis,16 e4 d |
   \bar "|."
 }
 
@@ -53,8 +53,8 @@ melodiaAltu =
   }
   e4. g8 fis e |
   fis8 fis fis4 fis |
-  e4. g8 fis e |
-  e8. e16 g4 fis |
+  e4. cis8 d e |
+  cis8. e16 cis4 a |
   \bar "|."
 }
 
@@ -68,12 +68,14 @@ melodiaTenorow =
     fis8 a d a g fis |
     fis4 e2 |
   }
-  \repeat unfold 3 {
+  \repeat unfold 2 {
     g4. e8 fis g |
     a8 a fis( a) a4 |
   }
-  g4. e8 fis g |
-  a8. cis,16 e4 d |
+  b4. b8 a cis |
+  a8 a a4 b |
+  b4. b8 b b |
+  e,8. e16 a4 fis |
   \bar "|."
 }
 
@@ -92,8 +94,8 @@ melodiaBasow =
     d8 d d4 fis |
   }
   e4. e8 a, a |
-  d8 d d4 dis |
-  e4. e8 e e |
+  d8 d dis4 dis |
+  e4. g8 fis e |
   a,8. a16 a4 d |
   \bar "|."
 }
@@ -117,7 +119,7 @@ tekstSopranu = \lyricmode {
   O -- gień krze -- pnie,
   ma Nie -- skoń -- czo -- ny!
   Wzgar -- dzo -- ny \break śmier -- tel -- ny
-  A Sło -- wo
+  A Sło -- wo Cia -- łem się sta -- ło
   za -- mie -- szka -- ło mię -- dzy na -- mi.
 }
 tekstAltu = \lyricmode {
