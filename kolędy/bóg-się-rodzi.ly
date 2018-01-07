@@ -3,7 +3,7 @@
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 16" " " " " }
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 17" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł, Ania Abaloszewa"
 }
@@ -13,18 +13,18 @@ metrumitp = {
   \key d \major
   \time 3/4
   \set Timing.beamExceptions = #'()
-  \tempo "Trochę tajemniczo"
+  \tempo "Tajemniczo"
+  \override DynamicText.X-offset = -3
 }
 melodiaSopranu =
 \relative f' {
   \metrumitp
-  <>^\markup \italic "soprany bardzo delikatnie"
-  <>\pp
+  <>\p
   \repeat unfold 2 {
     a2 cis4 |
     d4 cis2 |
     d4 a b |
-    fis4 e2 |
+    fis4 e r |
   }
   \repeat unfold 2 {
     cis'2. |
@@ -45,37 +45,37 @@ melodiaAltu =
     fis8 g fis e fis4 |
     fis8 e fis4 cis8( e) |
     d8 fis a fis e d |
-    a4 cis2 |
+    a4 cis r |
   }
   \repeat unfold 2 {
-    e4. g8 fis e |
-    fis8( g a) a fis a |
+    g'4. e8 fis g |
+    a8 a fis( a) a4 |
   }
-  e4. g8 fis e |
-  fis8 fis fis4 fis |
   e4. cis8 d e |
-  cis8. e16 cis4 a |
+  fis8 fis d( fis) fis4 |
+  e4. cis8 d e |
+  cis8. cis16 cis4 a |
   \bar "|."
 }
 
 melodiaTenorow =
 \relative f {
   \metrumitp
-  <>\f
+  <>\mf
   \repeat unfold 2 {
     d8. d'16 d4( cis8) b |
     b8. b16 b4( a8) g |
     fis8 a d a g fis |
-    fis4 e2 |
+    fis4 e r |
   }
   \repeat unfold 2 {
-    g4. e8 fis g |
-    a8 a fis( a) a4 |
+    e4. g8 fis e |
+    fis8( g a) a fis a |
   }
   b4. b8 a cis |
   a8 a a4 b |
   b4. b8 b b |
-  e,8. e16 a4 fis |
+  e,8. e16 g8( a) fis4 |
   \bar "|."
 }
 
@@ -87,14 +87,14 @@ melodiaBasow =
     d8. d16 d4 a |
     b8. fis'16 fis4 fis8( e) |
     d4 fis b, |
-    d4 a2 |
+    d4 a r |
   }
   \repeat unfold 2 {
     a4. a8 a a |
     d8 d d4 fis |
   }
   e4. e8 a, a |
-  d8 d dis4 dis |
+  d8 d d4 dis |
   e4. g8 fis e |
   a,8. a16 a4 d |
   \bar "|."
@@ -109,7 +109,6 @@ wzgardzony = \lyricmode {
   śmier -- tel -- ny Król nad wie -- ka -- mi!
   A Sło -- wo Cia -- łem się sta -- ło
   i mie -- szka -- ło mię -- dzy na -- mi.
-  i mie -- szka -- ło mię -- dzy na -- mi.
 }
 
 tekstSopranu = \lyricmode {
@@ -120,7 +119,7 @@ tekstSopranu = \lyricmode {
   ma Nie -- skoń -- czo -- ny!
   Wzgar -- dzo -- ny \break śmier -- tel -- ny
   A Sło -- wo Cia -- łem się sta -- ło
-  za -- mie -- szka -- ło mię -- dzy na -- mi.
+  i mie -- szka -- ło mię -- dzy na -- mi.
 }
 tekstAltu = \lyricmode {
   \set stanza = "1. "
