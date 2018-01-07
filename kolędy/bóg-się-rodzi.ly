@@ -100,6 +100,14 @@ melodiaBasow =
   \bar "|."
 }
 akordy = \chordmode {
+  \repeat unfold 2 {
+    d2 a4 b4:m fis:sus4 a4:7
+    d2 e4:m d a2
+  }
+  \repeat unfold 2 {
+    a2.:7 d
+  }
+  e2:m a4 d2 b4:7 e2.:m a2 d4
 }
 
 %--------------------------------SŁOWA
@@ -209,7 +217,8 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
 
 \score {
   \new ChoirStaff <<
-    \new ChordNames {
+    \new ChordNames
+    \with { \remove "Staff_performer" } {
       \germanChords
       \set chordNameLowercaseMinor = ##t
       \akordy
