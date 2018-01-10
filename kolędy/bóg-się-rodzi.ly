@@ -1,9 +1,9 @@
-\version "2.19.0"
+\version "2.18.2"
 #(ly:set-option 'strokeadjust #t)
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 11" " " " " }
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 12" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł, Ania Abaloszewa"
 }
@@ -35,7 +35,7 @@ melodiaSopranu =
   \override Hairpin.height = #0.5
   \override Hairpin.thickness = #0.6
   << { b	2( cis4) } { s4. s \< } >> |
-  << cis2\! -- { s8 s4\> s8\! } >> d4 |
+  << d2\! -- { s8 s4\> s8\! } >> b4 |
   <<
     {
       b4. b8 b b |
@@ -63,17 +63,17 @@ melodiaAltu =
   \metrumitp
   <>\mp
   \repeat unfold 2 {
-    fis8 g fis e g4 |
+    fis8 g fis e fis4 |
     fis8 e fis4 cis |
     d8 fis a fis e d |
     a4 cis2 |
   }
   \repeat unfold 2 {
     e4. g8 fis e |
-    fis8( g a) fis fis a |
+    fis8( g a) a fis a |
   }
-  d,4. e8 a e |
-  e8 e e4 fis |
+  e4. g8 a e |
+  fis8 fis fis4 fis |
   e4. g8 a g |
   e8. e16 g4 fis |
   \bar "|."
@@ -104,7 +104,7 @@ melodiaBasow =
   <>\mp
   \repeat unfold 2 {
     d8. d16 d4 a |
-    b8. fis'16 fis4 fis |
+    b8. fis'16 fis4 fis8( e) |
     d4 fis b, |
     d4 a2 |
   }
@@ -113,7 +113,7 @@ melodiaBasow =
     d8 d d4 fis |
   }
   e4. e8 e a, |
-  a8 a a4 d |
+  d8 d d4 dis |
   e4. e8 dis e |
   a,8. a16 a4 d |
   \bar "|."
