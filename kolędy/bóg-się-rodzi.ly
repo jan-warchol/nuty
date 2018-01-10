@@ -64,7 +64,7 @@ melodiaAltu =
   <>\mp
   \repeat unfold 2 {
     fis8 g fis e fis4 |
-    fis8 e fis4 cis |
+    fis8 e fis4 cis8( e) |
     d8 fis a fis e d |
     a4 cis2 |
   }
@@ -72,7 +72,7 @@ melodiaAltu =
     e4. g8 fis e |
     fis8( g a) a fis a |
   }
-  e4. g8 a e |
+  e4. g8 fis e |
   fis8 fis fis4 fis |
   e4. g8 a g |
   e8. e16 g4 fis |
@@ -104,7 +104,7 @@ melodiaBasow =
   <>\mp
   \repeat unfold 2 {
     d8. d16 d4 a |
-    b8. fis'16 fis4 fis8( e) |
+    b8. fis'16 fis4 fis8( a,) |
     d4 fis b, |
     d4 a2 |
   }
@@ -112,7 +112,7 @@ melodiaBasow =
     a4. e'8 cis a |
     d8 d d4 fis |
   }
-  e4. e8 e a, |
+  e4. e8 a, a |
   d8 d d4 dis |
   e4. e8 dis e |
   a,8. a16 a4 d |
