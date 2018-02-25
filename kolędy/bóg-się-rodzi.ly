@@ -3,7 +3,7 @@
 
 \header {
   title = \markup "Bóg się rodzi"
-  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 17" " " " " }
+  subsubtitle = \markup \column { \normal-text \italic "wersja robocza 18b" " " " " }
   poet = "słowa: Franciszek Karpiński (1741-1825)"
   composer = "opracowanie: Kasia Szymanek, Janek Warchoł, Ania Abaloszewa"
 }
@@ -42,9 +42,9 @@ melodiaAltu =
   \metrumitp
   <>\mp
   \repeat unfold 2 {
-    fis8 g fis e fis4 |
+    fis8 g fis4 e |
     fis8 e fis4 cis8( e) |
-    d8 fis a fis e d |
+    d8 fis fis fis e d |
     a4 cis r |
   }
   \repeat unfold 2 {
@@ -70,12 +70,12 @@ melodiaTenorow =
   }
   \repeat unfold 2 {
     e4. g8 fis e |
-    fis8( g a) a fis a |
+    fis8 g a4 fis |
   }
-  b4. b8 a cis |
+  b4. b8 a a |
   a8 a a4 b |
   b4. b8 b b |
-  e,8. e16 g8( a) fis4 |
+  e,8. e16 g4 fis4 |
   \bar "|."
 }
 
@@ -86,12 +86,12 @@ melodiaBasow =
   \repeat unfold 2 {
     d8. d16 d4 a |
     b8. fis'16 fis4 fis8( e) |
-    d4 fis b, |
+    d4 d e |
     d4 a r |
   }
   \repeat unfold 2 {
     a4. a8 a a |
-    d8 d d4 fis |
+    d8 d d4 d |
   }
   e4. e8 a, a |
   d8 d d4 dis |
