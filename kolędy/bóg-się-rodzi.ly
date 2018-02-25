@@ -20,41 +20,20 @@ melodiaSopranu =
   \metrumitp
   <>^\markup \italic "soprany bardzo delikatnie"
   <>\pp
-  a2 cis4 |
-  d4 cis2 |
-  d4 a b |
-  fis4 e2 |
-  a2 cis4 |
-  d4 cis2 |
-  a2 e4 |
-  fis4 e2 |
+  \repeat unfold 2 {
+    a2 cis4 |
+    d4 cis2 |
+    d4 a b |
+    fis4 e2 |
+  }
   \repeat unfold 2 {
     cis'2. |
     d2 d4 |
   }
-  \override Hairpin.height = #0.5
-  \override Hairpin.thickness = #0.6
-  << { b	2( cis4) } { s4. s \< } >> |
-  << d2\! -- { s8 s4\> s8\! } >> b4 |
-  <<
-    {
-      b4. b8 b b |
-      cis8. a16 cis4 d |
-    }
-    %{
-    \new Voice = sopranPierwszy {
-      \voiceOne
-      \set fontSize = #-2
-      b2 b'4-\tweak X-offset -3 ^\mp |
-      a8 a e e d d |
-    }
-    \new Lyrics \with { alignAboveContext = sopran }
-    \lyricsto sopranPierwszy \lyricmode {
-      \set fontSize = #-2
-      za -- mie -- szka -- ło mię -- dzy na -- mi.
-    }
-    %}
-  >>
+  b2( cis4)
+  d2 -- b4 |
+  b4. b8 b b |
+  cis8. a16 cis4 d |
   \bar "|."
 }
 
@@ -133,17 +112,19 @@ wzgardzony = \lyricmode {
 
 tekstSopranu = \lyricmode {
   \set stanza = "1. "
-  Bóg się ro -- dzi, moc  tru -- chle -- je!
-  O -- gień krze -- pnie, jas -- ny blask cie -- mnie -- je!
+  Bóg się ro -- dzi, 
+  Pan ob -- na -- żo -- ny!
+  O -- gień krze -- pnie,
+  ma Nie -- skoń -- czo -- ny!
   Wzgar -- dzo -- ny \break śmier -- tel -- ny
   A Sło -- wo
   za -- mie -- szka -- ło mię -- dzy na -- mi.
 }
 tekstAltu = \lyricmode {
   \set stanza = "1. "
-  Bóg się ro --- dzi,  moc  tru -- chle -- je,
+  Bóg się ro -- _ dzi,  moc  tru -- chle -- je,
   Pan nie -- bio -- sów ob -- na -- żo -- ny!
-  O -- gień krze --- pnie, blask cie -- mnie -- je,
+  O -- gień krze -- _ pnie, blask cie -- mnie -- je,
   ma gra -- ni -- ce Nie -- skoń -- czo -- ny!
   \wzgardzony
 }
