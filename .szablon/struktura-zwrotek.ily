@@ -21,6 +21,13 @@
           \zwrotkaIII
         }
         \odstepMiedzyZwrotkami
+        \line {
+          \bold
+          "4."
+          \odstepOdNumeruDoZwrotki
+          \zwrotkaIV
+        }
+        \odstepMiedzyZwrotkami
       }
 
       \null
@@ -29,16 +36,23 @@
       \column {
         \line {
           \bold
-          "4."
+          "5."
           \odstepOdNumeruDoZwrotki
-          \zwrotkaIV
+          \zwrotkaV
         }
         \odstepMiedzyZwrotkami
         \line {
           \bold
-          "5."
+          "6."
           \odstepOdNumeruDoZwrotki
-          \zwrotkaV
+          \zwrotkaVI
+        }
+        \odstepMiedzyZwrotkami
+        \line {
+          \bold
+          "7."
+          \odstepOdNumeruDoZwrotki
+          \zwrotkaVII
         }
         \odstepMiedzyZwrotkami
       }
