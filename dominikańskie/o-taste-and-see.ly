@@ -26,11 +26,11 @@ alternatingTimeSignatures =
      #}
      ))
 
-\include "../.szablon/formaty/default-a4-paper.ily"
+\include "../.szablon/formaty/default-a5-paper.ily"
 \bookOutputSuffix "a4-2pieciolinie"
 
 #(ly:set-option 'strokeadjust #t)
-#(set-global-staff-size 18)
+#(set-global-staff-size 15)
 
 \paper {
   top-markup-spacing #'basic-distance = 10
@@ -42,7 +42,7 @@ alternatingTimeSignatures =
 }
 
 \header {
-  odsteppotytule = \markup \vspace #2
+  %odsteppotytule = \markup \vspace #2
 }
 
 \header	{
@@ -145,9 +145,9 @@ melodiaBasow = \relative f {
 akordy = \chordmode {
 }
 
-#(define powiekszenie-zwrotek '(1.2 . 1.2))
+#(define powiekszenie-zwrotek '(1.1 . 1.1))
 #(define interlinia '(baseline-skip . 3)) % 3 is Lily default
-odstepMiedzyZwrotkami = \markup \vspace #1.3
+odstepMiedzyZwrotkami = \markup \vspace #1
 odstepOdNumeruDoZwrotki = \markup \hspace #1
 
 \include "../.szablon/globalne-ustawienia-formatowania.ily"
