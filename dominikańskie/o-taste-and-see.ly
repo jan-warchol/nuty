@@ -83,8 +83,8 @@ melodiaSopranu = \relative f' {
   }
   \repeat volta 2 {
     \override ParenthesesItem #'extra-offset = #'(0 . -0.5)
-    \cadenzaOn f\breve g \parenthesize a4 a \cadenzaOff \bar "|"
-    \cadenzaOn bes\breve a8 f \parenthesize g4 g \cadenzaOff
+    \cadenzaOn f\breve g a4 \parenthesize a \cadenzaOff \bar "|"
+    \cadenzaOn bes\breve a8 f  g4 \parenthesize g \cadenzaOff
   }
 }
 melodiaAltu = \relative f' {
@@ -119,9 +119,9 @@ melodiaTenorow = \relative f {
   }
   \repeat volta 2 {
     \override ParenthesesItem #'extra-offset = #'(0 . -1)
-    \cadenzaOn a\breve c \parenthesize c4 c \cadenzaOff \bar "|"
+    \cadenzaOn a\breve c c4 \parenthesize c \cadenzaOff \bar "|"
     \revert ParenthesesItem #'extra-offset
-    \cadenzaOn g\breve a8 a \parenthesize c4 c \cadenzaOff
+    \cadenzaOn g\breve a8 a  c4 \parenthesize c \cadenzaOff
   }
 }
 melodiaBasow = \relative f {
@@ -138,7 +138,7 @@ melodiaBasow = \relative f {
   }
   \repeat volta 2 {
     \cadenzaOn d'\breve c f4 f \cadenzaOff \bar "|"
-    \cadenzaOn g,\breve d'8 f \parenthesize c4 c \cadenzaOff
+    \cadenzaOn g,\breve d'8 f c4 \parenthesize c \cadenzaOff
   }
 }
 akordy = \chordmode {
@@ -155,9 +155,9 @@ odstepOdNumeruDoZwrotki = \markup \hspace #1
 tekst = \lyricmode {
   \set stanza = \markup \italic "Ref.:"
   O taste and see
-  \override LyricText.X-offset = #-0.5
+  %\override LyricText.X-offset = #-0.5
   how good,
-  \revert LyricText.X-offset
+  %\revert LyricText.X-offset
   how sweet is the Lord,
   o taste and see
   \override LyricText.X-offset = #-0.5
@@ -168,9 +168,11 @@ tekst = \lyricmode {
   \once \override LyricText #'self-alignment-X = #LEFT
   "I will bless the"
   \once \override LyricText #'self-alignment-X = #LEFT
-  "Lord at all" \skip 1 times,
+  \markup { \underline\bold Lord at all } \markup \underline\bold times, \skip 1 
   \once \override LyricText #'self-alignment-X = #LEFT
-  "praise of him is always" in my \skip 1 mouth.
+  "praise of him is always" \markup \underline\bold in my
+  \override LyricText.X-offset = #-1.5
+  mouth. \skip 1
 }
 
 tekstSopranu = \tekst
@@ -179,58 +181,67 @@ tekstTenorow = \tekst
 tekstBasow = \tekst
 
 zwrotkaII = \markup \column {
-  \line { Glorify the LORD with me; }
-  \line { together let us praise his name. }
+  \line { Glorify the \underline\bold LORD with \underline\bold me; }
+  \line { together let us \underline\bold praise his name. }
   \line {
-    "I sought the LORD, and he"
+    I sought the \underline\bold LORD, and he
     \concat { \underline\bold an swered } me;
   }
-  \line { from all my terrors he set me free. }
+  \line { from all my terrors he \underline\bold set me free. }
 }
 zwrotkaIII = \markup \column {
   \line {
-    "Look toward him and be"
+    Look toward him \underline\bold and be
     \concat { \underline\bold ra diant; }
   }
-  \line { let your faces not be abashed. }
-  \line { This lowly one called; the LORD heard, }
-  \line { and rescued him from all his distress. }
+  \line { let your faces not \underline\bold be abashed. }
+  \line { This lowly one called; \underline\bold the LORD \underline\bold heard, }
+  \line { and rescued him from all \underline\bold his distress. }
 }
 zwrotkaIV = \markup \column {
   \line { 
-    "The angel of the LORD is" 
+    The angel of the \underline\bold LORD is
     \concat { en \underline\bold camped }
   }
-  \line { around those who fear him, to rescue them. }
-  \line { Taste and see that the LORD is good. }
-  \line { Blessed the man who seeks refuge in him. }
+  \line {
+    around those who fear him, to
+    \concat { \underline\bold res cue } them.
+  }
+  \line { Taste and see that the \underline\bold LORD is \underline\bold good. }
+  \line {
+    Blessed the man who seeks
+    \concat { re \underline\bold fuge } in him.
+  }
 }
 zwrotkaV = \markup \column {
   \line {
-    "Fear the LORD, you his"
+    Fear the \underline\bold LORD, you his
     \concat { \underline\bold ho ly } ones.
   }
-  \line { They lack nothing, those who fear him. }
-  \line { The rich suffer want and go hungry, }
-  \line { but those who seek the LORD lack no blessing. }
+  \line { They lack nothing, \underline\bold those who fear him. }
+  \line {
+    The rich suffer \underline\bold want and go
+    \concat { \underline\bold hun gry, }
+  }
+  \line { but those who seek the LORD \underline\bold lack no blessing. }
 }
 zwrotkaVI = \markup \column {
   \line {
-    "The LORD is close to the"
+    The LORD is close to the
     \concat { \underline\bold bro ken \underline\bold heart ed; }
   }
-  \line { those whose spirit is crushed he will save. }
-  \line { When the just cry out, the LORD hears, }
-  \line { and rescues them in all their distress. }
+  \line { those whose spirit is crushed \underline\bold he will save. }
+  \line { When the just cry \underline\bold out, the LORD \underline\bold hears, }
+  \line { and rescues them in all \underline\bold their distress. }
 }
 zwrotkaVII = \markup \column {
-  \line { Many are the trials of the just man, }
+  \line { Many are the \underline\bold trials of the \underline\bold just man, }
   \line {
-    "but from them all the LORD will"
+    but from them all the LORD will
     \concat { \underline\bold res cue } him.
   }
-  \line { He will keep guard over all his bones; }
-  \line { not one of his bones shall be broken. }
+  \line { He will keep guard over \underline\bold all his \underline\bold bones; }
+  \line { not one of his bones \underline\bold shall be broken. }
 }
 
 drugiWers = \lyricmode {
@@ -238,10 +249,10 @@ drugiWers = \lyricmode {
   \once \override LyricText #'self-alignment-X = #LEFT
   "In the Lord my"
   \once \override LyricText #'self-alignment-X = #LEFT
-  % when I tried using \skip instead of hidden x, alignment was wrong
-  "soul shall make its" \once \hide LyricText x boast,
+  \markup { \underline\bold soul shall make its }
+  \markup \underline\bold boast, \skip 1
   \once \override LyricText #'self-alignment-X = #LEFT
-  "the humble shall hear" and be \skip 1 glad.
+  "the humble shall hear" \markup \underline\bold and be glad. \skip 1
 }
 
 drugiWersSopranu = \drugiWers
