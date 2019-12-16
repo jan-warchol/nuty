@@ -146,7 +146,7 @@ akordy = \chordmode {
 
 #(define powiekszenie-zwrotek '(1.2 . 1.2))
 #(define interlinia '(baseline-skip . 3)) % 3 is Lily default
-odstepMiedzyZwrotkami = \markup \vspace #2
+odstepMiedzyZwrotkami = \markup \vspace #1.3
 odstepOdNumeruDoZwrotki = \markup \hspace #1
 
 \include "../.szablon/globalne-ustawienia-formatowania.ily"
@@ -181,36 +181,54 @@ tekstBasow = \tekst
 zwrotkaII = \markup \column {
   "Glorify the LORD with me;"
   "together let us praise his name."
-  "I sought the LORD, and he answered me;"
+  \line {
+    "I sought the LORD, and he"
+    \concat { \underline\bold an swered } me;
+  }
   "from all my terrors he set me free."
 }
 zwrotkaIII = \markup \column {
-  "Look toward him and be radiant;"
+  \line {
+    "Look toward him and be"
+    \concat { \underline\bold ra diant; }
+  }
   "let your faces not be abashed."
   "This lowly one called; the LORD heard,"
   "and rescued him from all his distress."
 }
 zwrotkaIV = \markup \column {
-  "The angel of the LORD is encamped"
+  \line { 
+    "The angel of the LORD is" 
+    \concat { en \underline\bold camped }
+  }
   "around those who fear him, to rescue them."
   "Taste and see that the LORD is good."
   "Blessed the man who seeks refuge in him."
 }
 zwrotkaV = \markup \column {
-  "Fear the LORD, you his holy ones."
+  \line {
+    "Fear the LORD, you his"
+    \concat { \underline\bold ho ly } ones.
+  }
   "They lack nothing, those who fear him."
   "The rich suffer want and go hungry,"
   "but those who seek the LORD lack no blessing."
 }
 zwrotkaVI = \markup \column {
-  "The LORD is close to the brokenhearted;"
+  \line {
+    "The LORD is close to the"
+    \concat { \underline\bold bro ken \underline\bold heart ed; }
+  }
   "those whose spirit is crushed he will save."
   "When the just cry out, the LORD hears,"
   "and rescues them in all their distress."
 }
 zwrotkaVII = \markup \column {
   "Many are the trials of the just man,"
-  "but from them all the LORD will rescue him."
+  \line {
+    "but from them all the LORD will"
+    \concat { \underline\bold res cue } him.
+  }
   "He will keep guard over all his bones;"
   "not one of his bones shall be broken."
 }
