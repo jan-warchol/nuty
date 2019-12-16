@@ -29,6 +29,7 @@ alternatingTimeSignatures =
 \include "../.szablon/formaty/default-a4-paper.ily"
 \bookOutputSuffix "a4-2pieciolinie"
 
+#(ly:set-option 'strokeadjust #t)
 #(set-global-staff-size 18)
 
 \paper {
@@ -48,7 +49,7 @@ alternatingTimeSignatures =
   title = "O Taste And See"
   subtitle = "Psalm 34"
   composer = "P. Bębenek"
-  arranger = "arr. L. Miśko OP"
+  arranger = "arr. Ł. Miśko OP"
   editor = "skład nut: Jan Warchoł"
 }
 
@@ -73,7 +74,7 @@ melodiaSopranu = \relative f' {
     \time 2/4
     a4. f8 |
     bes4 a8 f |
-    g4. \fermata a8 |
+    g4. a8 |
     \time 3/4
     bes4. bes8 a f |
     \time 2/4
@@ -94,7 +95,7 @@ melodiaAltu = \relative f' {
     d4. d8 f e |
     f4. f8 |
     d4 d8 d |
-    f4 ( e8 \fermata ) f8 |
+    f4 ( e8 ) f8 |
     d4. d8 f d
     f4 e8 e8 |
     d4 bes8 d |
@@ -109,9 +110,9 @@ melodiaTenorow = \relative f {
   \repeat volta 2 {
     \metrumitp
     a8 | a4. a8 c8 c |
-    c4 c8 c |
+    c4. c8 |
     g4 a8 a |
-    c4. \fermata c8 |
+    c4. c8 |
     g4. g8 a a |
     c4 c8 c8 |
     bes4 f8 bes |
@@ -128,9 +129,9 @@ melodiaBasow = \relative f {
   \repeat volta 2 {
     \metrumitp
     a,8 | d4. d8 c8 c |
-    f4 f8 a,8 |
+    f4. a,8 |
     g4 d'8 d |
-    c4. \fermata f,8 |
+    c4. a8 |
     g4. g8 d' d |
     c4 c8 a8 |
     g4 bes8 bes |
@@ -138,7 +139,7 @@ melodiaBasow = \relative f {
   }
   \repeat volta 2 {
     \cadenzaOn d'\breve c f4 f \cadenzaOff \bar "|"
-    \cadenzaOn g,\breve d'8 f c4 \parenthesize c \cadenzaOff
+    \cadenzaOn g,\breve d'8 d c4 \parenthesize c \cadenzaOff
   }
 }
 akordy = \chordmode {
@@ -158,17 +159,17 @@ tekst = \lyricmode {
   %\override LyricText.X-offset = #-0.5
   how good,
   %\revert LyricText.X-offset
-  how sweet is the Lord,
+  how sweet is the Lᴏʀᴅ,
   o taste and see
   \override LyricText.X-offset = #-0.5
   how good
   \revert LyricText.X-offset
-  and how sweet is the Lord.
+  and how sweet is the Lᴏʀᴅ.
   \set stanza = "1."
   \once \override LyricText #'self-alignment-X = #LEFT
   "I will bless the"
   \once \override LyricText #'self-alignment-X = #LEFT
-  \markup { \underline\bold Lord at all } \markup \underline\bold times, \skip 1 
+  \markup { \underline\bold Lᴏʀᴅ at all } \markup \underline\bold times, \skip 1 
   \once \override LyricText #'self-alignment-X = #LEFT
   "praise of him is always" \markup \underline\bold in my
   \override LyricText.X-offset = #-1.5
@@ -247,7 +248,7 @@ zwrotkaVII = \markup \column {
 drugiWers = \lyricmode {
   \repeat unfold 23 { \skip 1 }
   \once \override LyricText #'self-alignment-X = #LEFT
-  "In the Lord my"
+  "In the Lᴏʀᴅ my"
   \once \override LyricText #'self-alignment-X = #LEFT
   \markup { \underline\bold soul shall make its }
   \markup \underline\bold boast, \skip 1
